@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+/* Navbar Section */
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #850E35;
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+.logo-title{
+    cursor: pointer;
+    margin-right: 450px;
+    margin-left: 30px;
+    color: #850E35;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+
+.nav-link{
+    list-style: none;
+}
+
+.nav-link li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-link li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-hvr:hover{
+    color: lightgray;
+}
+
+button{
+    padding: 9px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: #850E35;
+    color: white;
+}
+
+/* Home Header Section */
+.home-header{
+    padding: 50px 10%;
+    padding-bottom: 210px;
+    background-color: #850E35;
+    color: white;
+}
+
+.image-cropper {
+    width: 450px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    /*border-radius: 50%; */
+    display: block;
+    margin-left: 150px;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+  
+img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    size: 30%;
+}
+
+.row{
+    padding-left: 35px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-home-text{
+    font-size: 3.5rem;
+    padding-top: 60px;
+}
+
+
+/* Stats Section */
+.stats{
+    padding: 40px 10%;
+    padding-left: 7%;
+}
+
+.grid-container-feature{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    background-color: white;
+    margin: auto;
+    /* padding-left: 35px; */
+}
+  
+.grid-item-feature{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.stat-typo{
+    color: #850E35;
+    font-weight: 300;
+}
+
+.feature-paragraph{
+    font-size: 1.2rem;
+}
+
+/* FOTM Section */
+.FOTM{
+    padding: 10px 10%;
+}
+
+.menu-title{
+    text-align: center;
+    margin-bottom:20px;
+    margin-top: 50px;
+    font-size: 400%;
+    font-family: none;
+    color: #850E35;
+}
+
+.menu-title:hover{
+    color: black;
+}
+
+.column-fotm {
+    float: left;
+    width: 33.3%;
+    padding: 10px 10px;
+}
+  
+
+.row-fotm {margin: 10px -5px;}
+  
+ 
+.row-fotm:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+
+@media screen and (max-width: 1000px) {
+    .column-fotm {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .column-fotm {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    text-align: center;
+    background-color: #f1f1f1;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+  
+.card:hover {
+    box-shadow: 0 4px 30px 0 rgba(0,0,0,0.4);
+}
+
+/* Article Section */
+.article{
+    padding: 40px 10%;
+    margin-bottom: 150px;
+}
+
+.article-h1{
+    font-size: 3.3rem;
+    color: #850E35;
+    padding-top: 20px;
+}
+
+.article-p{
+    font-size: 1.5rem;
+}
+
+.btn-article{
+    margin-top: 15px;
+    background-color: #850E35;
+    color: white;
+}
+
+.img-article{
+    display: block;
+    margin-left: 190px;
+    margin-right: auto;
+    width: 350px;
+    height: 350px;
+}
+
+
+/* Contact Section */
+.contact{
+    padding: 20px 13%;
+    padding-bottom: 0;
+    background-color: #850E35;
+}
+
+.row-contact{
+    padding-bottom: -50px;
+}
+
+.contact-h2{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.contact-paragraph{
+    font-size: 1.2rem;
+    color: white;
+    text-align: right;
+}
+
+.col-text{
+    margin-top: 40px;
+    height: 0px;
+    width: 40%;
+}
+
+.col-image{
+    height: 250px;
+}
